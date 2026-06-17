@@ -1,0 +1,341 @@
+/* ==========================================================================
+   Premium TouchDonor Color Palette & Theme System (Light Premium)
+   ========================================================================== */
+
+/* --- Default Root Variables (Light Premium Theme) --- */
+:root {
+  color-scheme: light;
+
+  /* --- Core Brand Colors with Gradient Premium Palette --- */
+  --primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+  --primary-solid: #6C5CE7;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: linear-gradient(135deg, #FD79A8 0%, #E17055 100%);
+  --secondary-solid: #FD79A8;
+  --secondary-foreground: #FFFFFF;
+
+  --accent: linear-gradient(135deg, #FDCB6E 0%, #F39C12 100%);
+  --accent-solid: #FDCB6E;
+  --accent-foreground: #2D3436;
+
+  /* --- Premium Gradient Variations --- */
+  --gradient-brand: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 40%, #FD79A8 100%);
+  --gradient-warm: linear-gradient(135deg, #FDCB6E 0%, #F39C12 40%, #E17055 100%);
+  --gradient-cool: linear-gradient(135deg, #74B9FF 0%, #6C5CE7 50%, #A29BFE 100%);
+  --gradient-luxury: linear-gradient(135deg, #FDCB6E 0%, #FD79A8 40%, #6C5CE7 100%);
+  --gradient-soft: linear-gradient(135deg, #DFE6E9 0%, #F8F9FA 100%);
+
+  /* --- Base Layout with Soft Gradient Depth --- */
+  --background: #F8F9FA;
+  --background-gradient: radial-gradient(ellipse at top, #FFFFFF 0%, #F0F2F5 70%);
+  --foreground: #2D3436;
+
+  /* --- UI Panels & Components with Premium Glass Effect --- */
+  --card: rgba(255, 255, 255, 0.85);
+  --card-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.85) 100%);
+  --card-border: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(162, 155, 254, 0.2));
+  --card-foreground: #2D3436;
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+
+  --popover: rgba(255, 255, 255, 0.95);
+  --popover-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.92));
+  --popover-foreground: #2D3436;
+  --popover-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+  /* --- Borders & Inputs with Premium Glow --- */
+  --border: linear-gradient(135deg, rgba(108, 92, 231, 0.15), rgba(162, 155, 254, 0.15));
+  --border-solid: rgba(108, 92, 231, 0.1);
+  --input: rgba(255, 255, 255, 0.9);
+  --input-border: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(162, 155, 254, 0.2));
+  --input-focus: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(162, 155, 254, 0.3));
+  --input-shadow: 0 2px 12px rgba(108, 92, 231, 0.08);
+  --ring: linear-gradient(135deg, #6C5CE7, #A29BFE);
+
+  /* --- Feedback / Status with Premium Gradients --- */
+  --destructive: linear-gradient(135deg, #FF6B6B 0%, #EE5A24 100%);
+  --destructive-solid: #FF6B6B;
+  --success: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+  --success-solid: #00B894;
+  --warning: linear-gradient(135deg, #FDCB6E 0%, #F39C12 100%);
+  --warning-solid: #FDCB6E;
+  --info: linear-gradient(135deg, #74B9FF 0%, #0984E3 100%);
+
+  /* --- Muted & Subtle Elements --- */
+  --muted: rgba(223, 230, 233, 0.6);
+  --muted-gradient: linear-gradient(135deg, rgba(223, 230, 233, 0.8), rgba(248, 249, 250, 0.6));
+  --muted-foreground: #636E72;
+
+  /* --- Chart Colors (Data Visualization with Premium Palette) --- */
+  --chart-1: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --chart-2: linear-gradient(135deg, #FD79A8, #E17055);
+  --chart-3: linear-gradient(135deg, #FDCB6E, #F39C12);
+  --chart-4: linear-gradient(135deg, #74B9FF, #0984E3);
+  --chart-5: linear-gradient(135deg, #00B894, #00CEC9);
+  --chart-6: linear-gradient(135deg, #636E72, #B2BEC3);
+
+  /* --- Sidebar Component with Premium Gradients --- */
+  --sidebar: rgba(255, 255, 255, 0.95);
+  --sidebar-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.92));
+  --sidebar-foreground: #2D3436;
+  --sidebar-primary: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: linear-gradient(135deg, #FD79A8, #E17055);
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: linear-gradient(180deg, rgba(108, 92, 231, 0.1), rgba(162, 155, 254, 0.1));
+  --sidebar-ring: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --sidebar-shadow: 2px 0 20px rgba(0, 0, 0, 0.04);
+
+  /* --- Premium Glassmorphism Effects --- */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --glass-shadow: 0 8px 32px rgba(108, 92, 231, 0.08);
+  --glass-blur: blur(10px);
+
+  /* --- Premium Text Gradients --- */
+  --text-gradient-primary: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --text-gradient-secondary: linear-gradient(135deg, #FD79A8, #E17055);
+  --text-gradient-accent: linear-gradient(135deg, #FDCB6E, #F39C12);
+}
+
+/* --- Light Selector Override --- */
+.light {
+  color-scheme: light;
+  --background: #F8F9FA;
+  --background-gradient: radial-gradient(ellipse at top, #FFFFFF 0%, #F0F2F5 70%);
+  --foreground: #2D3436;
+
+  --card: rgba(255, 255, 255, 0.85);
+  --card-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.85) 100%);
+  --card-border: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(162, 155, 254, 0.2));
+  --card-foreground: #2D3436;
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+
+  --popover: rgba(255, 255, 255, 0.95);
+  --popover-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.92));
+  --popover-foreground: #2D3436;
+  --popover-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+  --primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+  --primary-solid: #6C5CE7;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: linear-gradient(135deg, #FD79A8 0%, #E17055 100%);
+  --secondary-solid: #FD79A8;
+  --secondary-foreground: #FFFFFF;
+
+  --accent: linear-gradient(135deg, #FDCB6E 0%, #F39C12 100%);
+  --accent-solid: #FDCB6E;
+  --accent-foreground: #2D3436;
+
+  --muted: rgba(223, 230, 233, 0.6);
+  --muted-gradient: linear-gradient(135deg, rgba(223, 230, 233, 0.8), rgba(248, 249, 250, 0.6));
+  --muted-foreground: #636E72;
+
+  --destructive: linear-gradient(135deg, #FF6B6B 0%, #EE5A24 100%);
+  --destructive-solid: #FF6B6B;
+  --success: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+  --warning: linear-gradient(135deg, #FDCB6E 0%, #F39C12 100%);
+
+  --border: linear-gradient(135deg, rgba(108, 92, 231, 0.15), rgba(162, 155, 254, 0.15));
+  --border-solid: rgba(108, 92, 231, 0.1);
+  --input: rgba(255, 255, 255, 0.9);
+  --input-border: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(162, 155, 254, 0.2));
+  --input-focus: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(162, 155, 254, 0.3));
+  --input-shadow: 0 2px 12px rgba(108, 92, 231, 0.08);
+  --ring: linear-gradient(135deg, #6C5CE7, #A29BFE);
+
+  --chart-1: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --chart-2: linear-gradient(135deg, #FD79A8, #E17055);
+  --chart-3: linear-gradient(135deg, #FDCB6E, #F39C12);
+  --chart-4: linear-gradient(135deg, #74B9FF, #0984E3);
+  --chart-5: linear-gradient(135deg, #00B894, #00CEC9);
+
+  --sidebar: rgba(255, 255, 255, 0.95);
+  --sidebar-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.92));
+  --sidebar-foreground: #2D3436;
+  --sidebar-primary: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: linear-gradient(135deg, #FD79A8, #E17055);
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: linear-gradient(180deg, rgba(108, 92, 231, 0.1), rgba(162, 155, 254, 0.1));
+  --sidebar-ring: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --sidebar-shadow: 2px 0 20px rgba(0, 0, 0, 0.04);
+
+  --gradient-brand: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 40%, #FD79A8 100%);
+  --gradient-warm: linear-gradient(135deg, #FDCB6E 0%, #F39C12 40%, #E17055 100%);
+  --gradient-cool: linear-gradient(135deg, #74B9FF 0%, #6C5CE7 50%, #A29BFE 100%);
+  --gradient-luxury: linear-gradient(135deg, #FDCB6E 0%, #FD79A8 40%, #6C5CE7 100%);
+  --gradient-soft: linear-gradient(135deg, #DFE6E9 0%, #F8F9FA 100%);
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --glass-shadow: 0 8px 32px rgba(108, 92, 231, 0.08);
+  --glass-blur: blur(10px);
+
+  --text-gradient-primary: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --text-gradient-secondary: linear-gradient(135deg, #FD79A8, #E17055);
+  --text-gradient-accent: linear-gradient(135deg, #FDCB6E, #F39C12);
+}
+
+/* --- Dark Theme Option (Optional) --- */
+.dark {
+  color-scheme: dark;
+  --background: #0A0E17;
+  --background-gradient: radial-gradient(ellipse at top, #162035 0%, #0A0E17 70%);
+  --foreground: #FFFFFF;
+
+  --card: rgba(15, 20, 32, 0.85);
+  --card-gradient: linear-gradient(135deg, rgba(15, 20, 32, 0.95) 0%, rgba(26, 35, 50, 0.85) 100%);
+  --card-border: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(162, 155, 254, 0.3));
+  --card-foreground: #FFFFFF;
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  --popover: rgba(15, 20, 32, 0.95);
+  --popover-gradient: linear-gradient(135deg, rgba(15, 20, 32, 0.98), rgba(26, 35, 50, 0.92));
+  --popover-foreground: #FFFFFF;
+  --popover-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+  --primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+  --primary-solid: #6C5CE7;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: linear-gradient(135deg, #FD79A8 0%, #E17055 100%);
+  --secondary-solid: #FD79A8;
+  --secondary-foreground: #FFFFFF;
+
+  --accent: linear-gradient(135deg, #FDCB6E 0%, #F39C12 100%);
+  --accent-solid: #FDCB6E;
+  --accent-foreground: #2D3436;
+
+  --muted: rgba(26, 35, 50, 0.6);
+  --muted-gradient: linear-gradient(135deg, rgba(26, 35, 50, 0.8), rgba(15, 20, 32, 0.6));
+  --muted-foreground: #8B95B0;
+
+  --destructive: linear-gradient(135deg, #FF6B6B 0%, #EE5A24 100%);
+  --destructive-solid: #FF6B6B;
+  --success: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+  --warning: linear-gradient(135deg, #FDCB6E 0%, #F39C12 100%);
+
+  --border: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(162, 155, 254, 0.2));
+  --border-solid: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.05);
+  --input-border: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(162, 155, 254, 0.3));
+  --input-focus: linear-gradient(135deg, rgba(108, 92, 231, 0.4), rgba(162, 155, 254, 0.4));
+  --input-shadow: 0 2px 12px rgba(108, 92, 231, 0.15);
+  --ring: linear-gradient(135deg, #6C5CE7, #A29BFE);
+
+  --chart-1: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --chart-2: linear-gradient(135deg, #FD79A8, #E17055);
+  --chart-3: linear-gradient(135deg, #FDCB6E, #F39C12);
+  --chart-4: linear-gradient(135deg, #74B9FF, #0984E3);
+  --chart-5: linear-gradient(135deg, #00B894, #00CEC9);
+
+  --sidebar: rgba(15, 20, 32, 0.95);
+  --sidebar-gradient: linear-gradient(180deg, rgba(15, 20, 32, 0.98), rgba(26, 35, 50, 0.92));
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: linear-gradient(135deg, #FD79A8, #E17055);
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: linear-gradient(180deg, rgba(108, 92, 231, 0.15), rgba(162, 155, 254, 0.15));
+  --sidebar-ring: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  --sidebar-shadow: 2px 0 20px rgba(0, 0, 0, 0.2);
+
+  --gradient-brand: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 40%, #FD79A8 100%);
+  --gradient-warm: linear-gradient(135deg, #FDCB6E 0%, #F39C12 40%, #E17055 100%);
+  --gradient-cool: linear-gradient(135deg, #74B9FF 0%, #6C5CE7 50%, #A29BFE 100%);
+  --gradient-luxury: linear-gradient(135deg, #FDCB6E 0%, #FD79A8 40%, #6C5CE7 100%);
+  --gradient-soft: linear-gradient(135deg, #2D3436 0%, #0A0E17 100%);
+
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --glass-blur: blur(10px);
+
+  --text-gradient-primary: linear-gradient(135deg, #A29BFE, #6C5CE7);
+  --text-gradient-secondary: linear-gradient(135deg, #FD79A8, #E17055);
+  --text-gradient-accent: linear-gradient(135deg, #FDCB6E, #F39C12);
+}
+
+/* --- System Prefers Color Scheme (Light by default) --- */
+@media (prefers-color-scheme: light) {
+  :root:not(.dark) {
+    color-scheme: light;
+    --background: #F8F9FA;
+    --background-gradient: radial-gradient(ellipse at top, #FFFFFF 0%, #F0F2F5 70%);
+    --foreground: #2D3436;
+
+    --card: rgba(255, 255, 255, 0.85);
+    --card-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.85) 100%);
+    --card-border: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(162, 155, 254, 0.2));
+    --card-foreground: #2D3436;
+    --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+
+    --popover: rgba(255, 255, 255, 0.95);
+    --popover-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.92));
+    --popover-foreground: #2D3436;
+    --popover-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+    --primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+    --primary-solid: #6C5CE7;
+    --primary-foreground: #FFFFFF;
+
+    --secondary: linear-gradient(135deg, #FD79A8 0%, #E17055 100%);
+    --secondary-solid: #FD79A8;
+    --secondary-foreground: #FFFFFF;
+
+    --accent: linear-gradient(135deg, #FDCB6E 0%, #F39C12 100%);
+    --accent-solid: #FDCB6E;
+    --accent-foreground: #2D3436;
+
+    --muted: rgba(223, 230, 233, 0.6);
+    --muted-gradient: linear-gradient(135deg, rgba(223, 230, 233, 0.8), rgba(248, 249, 250, 0.6));
+    --muted-foreground: #636E72;
+
+    --destructive: linear-gradient(135deg, #FF6B6B 0%, #EE5A24 100%);
+    --destructive-solid: #FF6B6B;
+    --success: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+    --warning: linear-gradient(135deg, #FDCB6E 0%, #F39C12 100%);
+
+    --border: linear-gradient(135deg, rgba(108, 92, 231, 0.15), rgba(162, 155, 254, 0.15));
+    --border-solid: rgba(108, 92, 231, 0.1);
+    --input: rgba(255, 255, 255, 0.9);
+    --input-border: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(162, 155, 254, 0.2));
+    --input-focus: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(162, 155, 254, 0.3));
+    --input-shadow: 0 2px 12px rgba(108, 92, 231, 0.08);
+    --ring: linear-gradient(135deg, #6C5CE7, #A29BFE);
+
+    --chart-1: linear-gradient(135deg, #6C5CE7, #A29BFE);
+    --chart-2: linear-gradient(135deg, #FD79A8, #E17055);
+    --chart-3: linear-gradient(135deg, #FDCB6E, #F39C12);
+    --chart-4: linear-gradient(135deg, #74B9FF, #0984E3);
+    --chart-5: linear-gradient(135deg, #00B894, #00CEC9);
+
+    --sidebar: rgba(255, 255, 255, 0.95);
+    --sidebar-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.92));
+    --sidebar-foreground: #2D3436;
+    --sidebar-primary: linear-gradient(135deg, #6C5CE7, #A29BFE);
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: linear-gradient(135deg, #FD79A8, #E17055);
+    --sidebar-accent-foreground: #FFFFFF;
+    --sidebar-border: linear-gradient(180deg, rgba(108, 92, 231, 0.1), rgba(162, 155, 254, 0.1));
+    --sidebar-ring: linear-gradient(135deg, #6C5CE7, #A29BFE);
+    --sidebar-shadow: 2px 0 20px rgba(0, 0, 0, 0.04);
+
+    --gradient-brand: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 40%, #FD79A8 100%);
+    --gradient-warm: linear-gradient(135deg, #FDCB6E 0%, #F39C12 40%, #E17055 100%);
+    --gradient-cool: linear-gradient(135deg, #74B9FF 0%, #6C5CE7 50%, #A29BFE 100%);
+    --gradient-luxury: linear-gradient(135deg, #FDCB6E 0%, #FD79A8 40%, #6C5CE7 100%);
+    --gradient-soft: linear-gradient(135deg, #DFE6E9 0%, #F8F9FA 100%);
+
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.8);
+    --glass-shadow: 0 8px 32px rgba(108, 92, 231, 0.08);
+    --glass-blur: blur(10px);
+
+    --text-gradient-primary: linear-gradient(135deg, #6C5CE7, #A29BFE);
+    --text-gradient-secondary: linear-gradient(135deg, #FD79A8, #E17055);
+    --text-gradient-accent: linear-gradient(135deg, #FDCB6E, #F39C12);
+  }
+}
