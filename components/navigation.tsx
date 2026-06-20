@@ -8,7 +8,7 @@ const menuItems = [
   {
     label: 'Solutions',
     links: [
-      { label: 'Donor Recognition Walls', href: '#solutions' },
+      { label: 'Donor Recognition Walls', href: '/donor-recognition-walls/' },
       { label: 'Alumni Engagement', href: '#solutions' },
       { label: 'Interactive Displays', href: '#solutions' },
     ],
