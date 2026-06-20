@@ -12,7 +12,7 @@ export default function Page() {
     <main className="w-full bg-background">
       <Navigation />
       <HeroSection />
-      <TrustBar />
+      {/* <TrustBar /> */}
       <CapabilitiesCards />
       <LivingImpact />
       <Testimonials />

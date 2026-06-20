@@ -96,6 +96,22 @@ footer {
   padding: 60px 0;
 }
 
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(180deg, var(--footer-bg) 0%, var(--footer-bg-bottom) 100%);
+  color: var(--footer-foreground);
+  border-top: 1px solid var(--footer-border);
+}
+
+.footer-link {
+  color: var(--footer-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--primary-solid);
+}
+
 /* Example 5: Navigation */
 nav {
   background: var(--gradient-nav);
