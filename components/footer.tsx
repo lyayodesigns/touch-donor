@@ -4,29 +4,13 @@ import { motion } from 'framer-motion'
 
 const footerLinks = {
   Solutions: [
-    'Digital Hall of Fame',
-    'Donor Recognition Walls',
-    'Alumni Engagement',
-    'School Legacy',
-    'Interactive Displays',
+    { label: 'Donor Recognition Walls', href: '/donor-recognition-walls/' },
+    { label: 'Alumni Engagement', href: '/alumni-engagement/' },
+    { label: 'Interactive Displays', href: '/interactive-displays/' },
   ],
   Resources: [
-    'Blog',
-    'Case Studies',
-    'FAQ',
-  ],
-  Company: [
-    'About Us',
-    'Careers',
-    'Contact',
-    'Support',
-    'Status',
-  ],
-  Legal: [
-    'Privacy Policy',
-    'Terms of Service',
-    'Cookie Policy',
-    'Accessibility',
+    { label: 'Blog', href: '#resources' },
+    { label: 'FAQ', href: '/faq/' },
   ],
 }
 
@@ -40,10 +24,10 @@ export function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-14"
+          className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-14"
         >
           {/* Brand column */}
-          <div className="col-span-1 md:col-span-1 flex flex-col gap-4">
+          <div className="col-span-1 md:col-span-2 flex flex-col gap-4">
             <div className="flex items-center gap-2.5">
               <div
                 className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
@@ -80,13 +64,17 @@ export function Footer() {
                 {category}
               </h4>
               <ul className="space-y-2.5">
-                {items.map((item) => (
-                  <li key={item}>
-                    <a href="#" className="footer-link text-sm">
-                      {item}
-                    </a>
-                  </li>
-                ))}
+                {items.map((item, idx) => {
+                  const label = typeof item === 'string' ? item : item.label
+                  const href = typeof item === 'string' ? '#' : item.href
+                  return (
+                    <li key={idx}>
+                      <a href={href} className="footer-link text-sm">
+                        {label}
+                      </a>
+                    </li>
+                  )
+                })}
               </ul>
             </motion.div>
           ))}

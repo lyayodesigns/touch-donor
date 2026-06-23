@@ -18,7 +18,7 @@ const menuItems = [
     label: 'Resources',
     links: [
       { label: 'Blog', href: '#resources' },
-      { label: 'FAQ', href: '#resources' },
+      { label: 'FAQ', href: '/faq/' },
     ],
   },
 ]
