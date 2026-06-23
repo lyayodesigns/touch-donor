@@ -114,6 +114,6 @@ footer {
 
 /* Example 5: Navigation */
 nav {
-  background: var(--gradient-nav);
+  /* background: var(--gradient-nav); */
   border-bottom: 1px solid var(--border);
 }

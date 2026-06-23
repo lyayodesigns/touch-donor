@@ -1,0 +1,5 @@
+Allow: /
+Disallow: /api/
+ 
+Sitemap: https://touchdonor.com/sitemap.xml
+Host: https://touchdonor.com

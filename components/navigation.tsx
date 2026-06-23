@@ -3,28 +3,15 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Menu, X } from 'lucide-react'
+import Link from 'next/link'
 
 const menuItems = [
   {
     label: 'Solutions',
     links: [
       { label: 'Donor Recognition Walls', href: '/donor-recognition-walls/' },
-      { label: 'Alumni Engagement', href: '#solutions' },
-      { label: 'Interactive Displays', href: '#solutions' },
-    ],
-  },
-  {
-    label: 'Capabilities',
-    links: [
-      { label: 'How It Works', href: '#capabilities' },
-      { label: 'Features', href: '#capabilities' },
-    ],
-  },
-  {
-    label: 'Impact',
-    links: [
-      { label: 'Case Studies', href: '#impact' },
-      { label: 'Testimonials', href: '#impact' },
+      { label: 'Alumni Engagement', href: '/alumni-engagement/' },
+      { label: 'Interactive Displays', href: '/interactive-displays/' },
     ],
   },
   {
@@ -34,14 +21,10 @@ const menuItems = [
       { label: 'FAQ', href: '#resources' },
     ],
   },
-  {
-    label: 'Get Started',
-    links: [
-      { label: 'Request Demo', href: '#get-started' },
-      { label: 'Contact', href: '#get-started' },
-    ],
-  },
 ]
+
+const firstLink = { label: 'Home', href: '/' }
+const lastLink = { label: 'Contact', href: '/contact/' }
 
 export function Navigation() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
@@ -57,15 +40,21 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
             <span className="text-foreground font-bold text-sm">TD</span>
           </div>
           <span className="font-bold text-xl text-foreground">TouchDonor</span>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-1">
+          <Link
+            href={firstLink.href}
+            className="px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground transition"
+          >
+            {firstLink.label}
+          </Link>
           {menuItems.map((item) => (
             <div
               key={item.label}
@@ -99,13 +88,13 @@ export function Navigation() {
                   >
                     <div className="min-w-56 rounded-xl border border-border bg-popover shadow-lg shadow-black/5 p-2">
                       {item.links.map((link) => (
-                        <a
+                        <Link
                           key={link.label}
                           href={link.href}
                           className="block px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition"
                         >
                           {link.label}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </motion.div>
@@ -113,6 +102,12 @@ export function Navigation() {
               </AnimatePresence>
             </div>
           ))}
+          <Link
+            href={lastLink.href}
+            className="px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground transition"
+          >
+            {lastLink.label}
+          </Link>
         </div>
 
         {/* Desktop CTA */}
@@ -143,6 +138,13 @@ export function Navigation() {
             className="lg:hidden overflow-hidden border-t border-border bg-background"
           >
             <div className="max-w-7xl mx-auto px-6 py-4 space-y-1">
+              <Link
+                href={firstLink.href}
+                onClick={() => setMobileOpen(false)}
+                className="block py-3 text-sm font-medium text-foreground"
+              >
+                {firstLink.label}
+              </Link>
               {menuItems.map((item) => (
                 <div key={item.label}>
                   <button
@@ -170,20 +172,27 @@ export function Navigation() {
                         className="overflow-hidden pl-4"
                       >
                         {item.links.map((link) => (
-                          <a
+                          <Link
                             key={link.label}
                             href={link.href}
                             onClick={() => setMobileOpen(false)}
                             className="block py-2.5 text-sm text-muted-foreground hover:text-foreground transition"
                           >
                             {link.label}
-                          </a>
+                          </Link>
                         ))}
                       </motion.div>
                     )}
                   </AnimatePresence>
                 </div>
               ))}
+              <Link
+                href={lastLink.href}
+                onClick={() => setMobileOpen(false)}
+                className="block py-3 text-sm font-medium text-foreground border-t border-border"
+              >
+                {lastLink.label}
+              </Link>
               <div className="pt-4">
                 <button className="w-full px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition">
                   Get Started

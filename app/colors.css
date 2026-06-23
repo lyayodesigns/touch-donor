@@ -10,6 +10,7 @@
   --primary: linear-gradient(135deg, #8B5CF6 0%, #C4B5FD 100%);
   --primary-solid: #8B5CF6;
   --primary-foreground: #FFFFFF;
+  --primary-navitem-text:#5B3DF5
 
   --secondary: linear-gradient(135deg, #F472B6 0%, #FB923C 100%);
   --secondary-solid: #F472B6;

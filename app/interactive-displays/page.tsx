@@ -7,7 +7,7 @@ import { Footer } from '@/components/footer'
 import Script from 'next/script'
 
 /* ─── Hero ─────────────────────────────────────────────────────────────── */
-function DRWHero() {
+function IDHero() {
   return (
     <section
       className="w-full pt-32 pb-24 relative overflow-hidden"
@@ -33,7 +33,7 @@ function DRWHero() {
       />
       <div
         className="absolute -bottom-20 -left-40 w-[400px] h-[400px] rounded-full blur-[100px] opacity-20 pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(141, 139, 146, 0.2).2) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(141, 139, 146, 0.2) 0%, transparent 70%)' }}
       />
 
       <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
@@ -51,25 +51,25 @@ function DRWHero() {
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#8B5CF6] animate-pulse inline-block" />
-            Interactive Donor Recognition
+            Interactive Display Software
           </div>
 
           <h1
             className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-tight mb-6"
             style={{ color: '#FFFFFF' }}
           >
-            Digital Donor{' '}
+            Interactive{' '}
             <span
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: 'linear-gradient(135deg, #9489ad 0%, #C4B5FD 40%, #F472B6 100%)' }}
             >
-              Recognition Walls
+              Touchscreen Displays
             </span>
           </h1>
 
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-10" style={{ color: '#E9D5FF' }}>
-            Transform donor appreciation with TouchDonor&apos;s interactive donor wall software. Digital donor recognition
-            that tells impact stories, updates in real time, and never runs out of space.
+            Transform visitor engagement with TouchDonor&apos;s interactive display software. Touchscreen kiosks,
+            digital signage, and recognition displays for schools and nonprofits.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -108,29 +108,34 @@ function DRWHero() {
 /* ─── Section 1 — The Problem ───────────────────────────────────────────── */
 const problems = [
   {
-    text: 'Limited space — you can only fit so many names',
+    text: 'Passive, not engaging — visitors glance and walk away',
     gradient: 'linear-gradient(135deg, #FF7675 0%, #FD4A4A 100%)',
     glow: 'rgba(255,118,117,0.5)',
   },
   {
-    text: 'Slow updates — months to add a single new donor',
+    text: 'Quickly outdated — information becomes obsolete, but updates are expensive and slow',
     gradient: 'linear-gradient(135deg, #F472B6 0%, #FB7185 100%)',
     glow: 'rgba(244,114,182,0.5)',
   },
   {
-    text: 'No storytelling — names without context don\'t inspire',
+    text: 'Limited content — you can only fit so much on a plaque or in a case',
     gradient: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
     glow: 'rgba(251,191,36,0.5)',
   },
   {
-    text: 'No analytics — you can\'t measure engagement or impact',
+    text: 'No interactivity — visitors can\'t explore, search, or discover',
     gradient: 'linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)',
     glow: 'rgba(96,165,250,0.5)',
   },
   {
-    text: 'Inaccessible — only visitors in your building can see it',
+    text: 'Inaccessible — content is only available to those physically present',
     gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
     glow: 'rgba(139,92,246,0.5)',
+  },
+  {
+    text: 'No analytics — you have no idea what visitors engage with',
+    gradient: 'linear-gradient(135deg, #34D399 0%, #10B981 100%)',
+    glow: 'rgba(52,211,153,0.5)',
   },
 ]
 
@@ -174,19 +179,18 @@ function ProblemSection() {
             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight"
             style={{ color: '#1E1B4B' }}
           >
-            Outdated Recognition,{' '}
+            Static Displays,{' '}
             <span
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: 'linear-gradient(135deg, #FF7675 0%, #F472B6 100%)' }}
             >
-              Missed Opportunities
+              Disengaged Audiences
             </span>
           </h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: '#6D28D9' }}>
-            Traditional donor walls — brass plaques, engraved bricks, framed nameplates — were built for a different era.
-            They are static, expensive to update, and physically limited. Adding a new donor can take months and cost
-            thousands. Stories behind the gifts remain untold. And once the wall is full, your only option is to build
-            another one.
+            Walk into most school lobbies, alumni centers, or donor recognition spaces, and what do you see? Static
+            plaques. Framed photos. Outdated trophy cases. Displays that were installed years ago and haven&apos;t been
+            updated since.
           </p>
         </motion.div>
 
@@ -212,18 +216,19 @@ function ProblemSection() {
                 className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6"
                 style={{ background: 'linear-gradient(135deg, #FF7675 0%, #F472B6 100%)', boxShadow: '0 6px 20px rgba(255,118,117,0.35)' }}
               >
-                🏛️
+                🖥️
               </div>
               <h3 className="text-2xl font-heading font-bold mb-4" style={{ color: '#1E1B4B' }}>
-                The Cost of Outdated Recognition Is Real
+                The Cost of Static Displays Is Real
               </h3>
               <p className="text-base leading-relaxed mb-6" style={{ color: '#4C1D95' }}>
-                Donors feel underappreciated. Future giving stagnates. And your institution misses the opportunity to
-                build lasting relationships through recognition.
+                Missed opportunities to tell your story. Visitors who leave unimpressed. Donors and alumni who feel
+                underrecognized.
               </p>
               <p className="text-base leading-relaxed" style={{ color: '#4C1D95' }}>
-                Every day your recognition wall stays static is a day a potential major donor walks away uninspired — and
-                a day your institution loses the compounding returns of meaningful donor engagement.
+                The global interactive display market is growing at 7.8% CAGR, driven by increasing adoption of
+                interactive learning tools and digital signage solutions. In 2026, organizations are moving beyond
+                traditional &ldquo;screen + playlist&rdquo; signage toward experiential engagement.
               </p>
             </div>
           </motion.div>
@@ -272,53 +277,52 @@ function ProblemSection() {
 /* ─── Section 2 — The Solution ──────────────────────────────────────────── */
 const features = [
   {
-    title: 'Unlimited Capacity',
-    benefit: 'Recognize every donor — from founding benefactors to first-time givers — without ever running out of space',
-    icon: '∞',
+    title: 'Touchscreen Interactivity',
+    benefit: 'Visitors tap, swipe, and explore — discovery becomes part of the experience',
     gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
     glow: 'rgba(139,92,246,0.55)',
   },
   {
-    title: 'Real-Time Updates',
-    benefit: 'Add new donors in minutes, not months. Update names, photos, and stories instantly',
-    icon: '⚡',
+    title: 'Rich Multimedia Content',
+    benefit: 'Photos, videos, audio, and text — stories come to life',
     gradient: 'linear-gradient(135deg, #F472B6 0%, #FB7185 100%)',
     glow: 'rgba(244,114,182,0.55)',
   },
   {
-    title: 'Multimedia Storytelling',
-    benefit: 'Go beyond names with photos, videos, tribute letters, and impact narratives that connect generosity to mission',
-    icon: '🎬',
+    title: 'Search & Discovery',
+    benefit: 'Visitors find exactly what they\'re looking for — donors, alumni, inductees, or history',
     gradient: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
     glow: 'rgba(251,191,36,0.55)',
   },
   {
-    title: 'Search & Discovery',
-    benefit: 'Visitors can search for specific donors, browse by giving level, or explore campaign history',
-    icon: '🔍',
+    title: 'Cloud-Based CMS',
+    benefit: 'Update content in minutes from anywhere — no coding required',
     gradient: 'linear-gradient(135deg, #34D399 0%, #10B981 100%)',
     glow: 'rgba(52,211,153,0.55)',
   },
   {
-    title: 'Campaign Progress Displays',
-    benefit: 'Show real-time fundraising progress to motivate continued giving',
-    icon: '📊',
+    title: 'Unlimited Scalability',
+    benefit: 'Display thousands of profiles with zero incremental cost',
     gradient: 'linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)',
     glow: 'rgba(96,165,250,0.55)',
   },
   {
-    title: 'Cloud-Based Management',
-    benefit: 'Update content from anywhere — no coding or technical expertise required',
-    icon: '☁️',
+    title: 'Mobile Accessibility',
+    benefit: 'Every profile has a shareable URL — content available anywhere',
     gradient: 'linear-gradient(135deg, #A78BFA 0%, #DDD6FE 100%)',
     glow: 'rgba(167,139,250,0.55)',
   },
   {
-    title: 'Global Accessibility',
-    benefit: 'Every donor profile has a shareable URL, accessible from any device, anywhere in the world',
-    icon: '🌐',
+    title: 'Analytics & Insights',
+    benefit: 'See what visitors engage with — measure what matters',
     gradient: 'linear-gradient(135deg, #F472B6 0%, #FBBF24 100%)',
     glow: 'rgba(244,114,182,0.55)',
+  },
+  {
+    title: 'ADA Compliant',
+    benefit: 'WCAG 2.1 AA compliant — accessible to all visitors',
+    gradient: 'linear-gradient(135deg, #34D399 0%, #60A5FA 100%)',
+    glow: 'rgba(52,211,153,0.55)',
   },
 ]
 
@@ -372,17 +376,18 @@ function SolutionSection() {
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-white">
-            Interactive Digital{' '}
+            Interactive Touchscreen Displays{' '}
             <span
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: 'linear-gradient(135deg, #A78BFA 0%, #C4B5FD 40%, #F9A8D4 100%)' }}
             >
-              Donor Walls
+              That Engage
             </span>
           </h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: 'rgba(196,181,253,0.75)' }}>
-            TouchDonor replaces static plaques with dynamic, interactive donor recognition walls that engage visitors,
-            tell impact stories, and grow with your institution — all from a cloud-based platform.
+            TouchDonor&apos;s interactive display software transforms passive observation into active exploration. Our
+            Emmy-nominated platform turns any commercial-grade touchscreen into a dynamic, engaging experience that
+            captivates visitors and tells your story.
           </p>
         </motion.div>
 
@@ -424,7 +429,7 @@ function SolutionSection() {
                   <div className={`flex gap-5 ${isLastOdd ? 'lg:items-center' : 'items-start'}`}>
                     <div className="shrink-0">
                       <div
-                        className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl font-bold text-white"
+                        className="w-14 h-14 rounded-xl flex items-center justify-center text-lg font-bold text-white"
                         style={{
                           background: feat.gradient,
                           boxShadow: isHovered
@@ -432,7 +437,7 @@ function SolutionSection() {
                             : `0 4px 14px ${feat.glow.replace('0.55', '0.3')}`,
                         }}
                       >
-                        {feat.icon}
+                        {String(i + 1).padStart(2, '0')}
                       </div>
                     </div>
 
@@ -474,7 +479,7 @@ function SolutionSection() {
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: 'linear-gradient(135deg, #A78BFA, #F9A8D4)' }}
             >
-              A recognition experience that inspires donors, engages visitors, and drives continued philanthropic support.
+              Visitors who stay longer, engage deeper, and leave with a lasting impression. Recognition that actually works.
             </span>
           </p>
         </motion.div>
@@ -488,7 +493,7 @@ function SolutionSection() {
           className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5"
         >
           <motion.a
-            href="/interactive-displays/"
+            href="/donor-recognition-walls/"
             whileHover={{ y: -4 }}
             transition={{ duration: 0.25 }}
             className="relative rounded-2xl p-6 overflow-hidden block"
@@ -503,14 +508,14 @@ function SolutionSection() {
                 className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-xl"
                 style={{ background: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)' }}
               >
-                🖥️
+                🏆
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-heading font-bold mb-2" style={{ color: '#F5F3FF' }}>
-                  Interactive Display Software
+                  Digital Donor Recognition
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'rgba(196,181,253,0.7)' }}>
-                  Transform visitor engagement with touchscreen kiosks and digital signage solutions.
+                  Interactive donor wall software that tells impact stories and inspires continued philanthropy.
                 </p>
               </div>
             </div>
@@ -535,7 +540,7 @@ function SolutionSection() {
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-heading font-bold mb-2" style={{ color: '#F5F3FF' }}>
-                  Alumni Engagement Platform
+                  Alumni Engagement Solutions
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'rgba(196,181,253,0.7)' }}>
                   Reconnect graduates and drive alumni giving with digital recognition and storytelling.
@@ -549,47 +554,47 @@ function SolutionSection() {
   )
 }
 
-/* ─── Section 3 — Use Cases ─────────────────────────────────────────────── */
+/* ─── Section 3 — Use Cases & Implementation ────────────────────────────── */
 const useCases = [
   {
-    icon: '🏫',
-    label: 'Development & Advancement Offices',
-    title: 'Development & Advancement Offices',
+    title: 'School Lobbies & Welcome Centers',
     description:
-      'Interactive donor walls in lobbies and welcome centers that welcome visitors, showcase giving societies, and inspire future gifts. Campaign progress displays that build momentum during capital campaigns.',
+      'Interactive displays that welcome visitors, showcase school achievements, and tell the story of your institution. Digital directories, event calendars, and recognition walls all in one place.',
     gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
     glow: 'rgba(139,92,246,0.5)',
     badge: '01',
   },
   {
-    icon: '🎓',
-    label: 'Schools & Universities',
-    title: 'Schools & Universities',
+    title: 'Athletic Halls of Fame',
     description:
-      'Recognize annual fund donors, scholarship benefactors, and capital campaign supporters. Tell the stories behind the gifts — connecting donors directly to the students and programs they support.',
-    gradient: 'linear-gradient(135deg, #F472B6 0%, #FB7185 100%)',
-    glow: 'rgba(244,114,182,0.5)',
+      'Touchscreen displays that bring athletic history to life — championship teams, legendary athletes, record holders, and memorable moments. Visitors explore at their own pace.',
+    gradient: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
+    glow: 'rgba(251,191,36,0.5)',
     badge: '02',
   },
   {
-    icon: '🏆',
-    label: 'Athletic Departments',
-    title: 'Athletic Departments',
+    title: 'Alumni Centers',
     description:
-      'Donor recognition that celebrates the supporters who make athletic programs possible. From facility naming rights to annual giving, every contribution is visible and valued.',
-    gradient: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
-    glow: 'rgba(251,191,36,0.5)',
+      'Interactive alumni recognition that celebrates graduate achievements and reconnects former students. Searchable directories, success stories, and digital archives.',
+    gradient: 'linear-gradient(135deg, #F472B6 0%, #FB7185 100%)',
+    glow: 'rgba(244,114,182,0.5)',
     badge: '03',
   },
   {
-    icon: '🤝',
-    label: 'Nonprofit Organizations',
-    title: 'Nonprofit Organizations',
+    title: 'Donor Recognition Spaces',
     description:
-      'From healthcare foundations to arts organizations, digital donor walls that elevate the donor experience and demonstrate tangible impact.',
+      'Interactive donor walls that tell impact stories, showcase giving levels, and build momentum for future campaigns.',
     gradient: 'linear-gradient(135deg, #34D399 0%, #10B981 100%)',
     glow: 'rgba(52,211,153,0.5)',
     badge: '04',
+  },
+  {
+    title: 'School History & Archives',
+    description:
+      'Digital exhibits that preserve and share institutional history — yearbooks, photos, newspaper clippings, and memorabilia — all accessible through touchscreen exploration.',
+    gradient: 'linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)',
+    glow: 'rgba(96,165,250,0.5)',
+    badge: '05',
   },
 ]
 
@@ -641,12 +646,12 @@ function UseCasesSection() {
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: 'linear-gradient(135deg, #8B5CF6 0%, #C4B5FD 40%, #F472B6 100%)' }}
             >
-              Every Institution
+              Every Space
             </span>
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: '#6D28D9' }}>
-            TouchDonor&apos;s donor recognition walls are purpose-built for educational institutions and nonprofits.
-            Here&apos;s how different organizations are using them.
+            TouchDonor&apos;s interactive display software serves a wide range of applications across educational and
+            nonprofit settings.
           </p>
         </motion.div>
 
@@ -685,7 +690,7 @@ function UseCasesSection() {
                   <div className="flex gap-6 items-start">
                     <div className="shrink-0">
                       <div
-                        className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl"
+                        className="w-16 h-16 rounded-2xl flex items-center justify-center text-xl font-heading font-black text-white"
                         style={{
                           background: uc.gradient,
                           boxShadow: isHovered
@@ -693,22 +698,12 @@ function UseCasesSection() {
                             : `0 4px 14px ${uc.glow.replace('0.5', '0.25')}`,
                         }}
                       >
-                        {uc.icon}
+                        {uc.badge}
                       </div>
                     </div>
 
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-3 mb-3">
-                        <span
-                          className="text-[10px] font-black tracking-[0.2em] px-2 py-0.5 rounded"
-                          style={{
-                            background: uc.glow.replace('0.5', '0.1'),
-                            color: uc.glow.replace('rgba', 'rgb').replace(',0.5)', ')'),
-                            border: `1px solid ${uc.glow.replace('0.5', '0.3')}`,
-                          }}
-                        >
-                          {uc.badge}
-                        </span>
                         <div
                           className="flex-1 h-px"
                           style={{ background: `linear-gradient(90deg, ${uc.glow.replace('0.5', '0.25')}, transparent)` }}
@@ -730,18 +725,37 @@ function UseCasesSection() {
             )
           })}
         </div>
+
+        {/* Hardware compatibility note */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-10 text-center rounded-2xl px-8 py-6"
+          style={{
+            background: 'rgba(255,255,255,0.6)',
+            border: '1px solid rgba(139,92,246,0.15)',
+            backdropFilter: 'blur(12px)',
+          }}
+        >
+          <p className="text-base md:text-lg font-medium" style={{ color: '#4C1D95' }}>
+            <span className="font-bold" style={{ color: '#1E1B4B' }}>Hardware Compatibility:</span>{' '}
+            TouchDonor works with any commercial-grade touchscreen display — use what you have or work with our
+            recommended partners.
+          </p>
+        </motion.div>
       </div>
     </section>
   )
 }
 
-/* ─── Section 4 — Getting Started (Process) ─────────────────────────────── */
-const gettingStartedSteps = [
+/* ─── Section 4 — Implementation Journey ────────────────────────────────── */
+const journeySteps = [
   {
     number: '01',
     title: 'Consult',
-    description: 'We assess your goals and existing donor data',
-    icon: '🤝',
+    description: 'We understand your space, audience, and goals',
     gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
     glow: 'rgba(139,92,246,0.55)',
   },
@@ -749,40 +763,36 @@ const gettingStartedSteps = [
     number: '02',
     title: 'Design',
     description: 'Custom interface that reflects your brand',
-    icon: '🎨',
     gradient: 'linear-gradient(135deg, #F472B6 0%, #FB7185 100%)',
     glow: 'rgba(244,114,182,0.55)',
   },
   {
     number: '03',
-    title: 'Upload',
-    description: 'We help digitize your donor records and stories',
-    icon: '☁️',
+    title: 'Content',
+    description: 'We help digitize and organize your content',
     gradient: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
     glow: 'rgba(251,191,36,0.55)',
   },
   {
     number: '04',
     title: 'Deploy',
-    description: 'Launch on your existing screens or new hardware',
-    icon: '🚀',
+    description: 'Install on your existing displays or new hardware',
     gradient: 'linear-gradient(135deg, #34D399 0%, #10B981 100%)',
     glow: 'rgba(52,211,153,0.55)',
   },
   {
     number: '05',
-    title: 'Grow',
-    description: 'Update in real time, track analytics, and scale',
-    icon: '📈',
+    title: 'Manage',
+    description: 'Update content instantly through our cloud CMS',
     gradient: 'linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)',
     glow: 'rgba(96,165,250,0.55)',
   },
 ]
 
-function GettingStartedSection() {
+function JourneySection() {
   return (
     <section
-      id="getting-started"
+      id="journey"
       className="w-full py-28 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #0F0A2A 0%, #1A0F3A 50%, #120830 100%)' }}
     >
@@ -822,7 +832,7 @@ function GettingStartedSection() {
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#A78BFA] animate-pulse inline-block" />
-            Getting Started
+            Implementation Journey
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-white">
@@ -831,11 +841,12 @@ function GettingStartedSection() {
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: 'linear-gradient(135deg, #A78BFA 0%, #C4B5FD 40%, #F9A8D4 100%)' }}
             >
-              Live Recognition
+              Live Displays
             </span>
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(196,181,253,0.75)' }}>
-            Five simple steps to transform your donor recognition wall from static plaques to a living, breathing digital experience.
+            Five simple steps to transform your static displays into dynamic, interactive experiences that captivate
+            visitors.
           </p>
         </motion.div>
 
@@ -850,7 +861,7 @@ function GettingStartedSection() {
           />
 
           <div className="space-y-10 md:space-y-0">
-            {gettingStartedSteps.map((step, i) => {
+            {journeySteps.map((step, i) => {
               const isEven = i % 2 === 0
               return (
                 <motion.div
@@ -861,7 +872,7 @@ function GettingStartedSection() {
                   viewport={{ once: true }}
                   className={`relative flex flex-col md:flex-row md:items-center gap-6 md:gap-0 ${
                     isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                  } ${i !== gettingStartedSteps.length - 1 ? 'md:mb-16' : ''}`}
+                  } ${i !== journeySteps.length - 1 ? 'md:mb-16' : ''}`}
                 >
                   <div className={`w-full md:w-[calc(50%-3rem)] ${isEven ? 'md:pr-10' : 'md:pl-10'}`}>
                     <motion.div
@@ -881,10 +892,10 @@ function GettingStartedSection() {
                       />
                       <div className="flex items-start gap-4">
                         <div
-                          className="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-2xl"
+                          className="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center font-heading font-black text-lg text-white"
                           style={{ background: step.gradient, boxShadow: `0 6px 20px ${step.glow.replace('0.55', '0.4')}` }}
                         >
-                          {step.icon}
+                          {step.number}
                         </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="text-xl md:text-2xl font-heading font-bold mb-2" style={{ color: '#F5F3FF' }}>
@@ -942,7 +953,7 @@ function GettingStartedSection() {
 }
 
 /* ─── CTA Section ───────────────────────────────────────────────────────── */
-function DRWConversionHub() {
+function IDConversionHub() {
   return (
     <section
       id="get-started"
@@ -981,17 +992,17 @@ function DRWConversionHub() {
             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight"
             style={{ color: '#1E1B4B' }}
           >
-            Transform Your{' '}
+            Bring Your{' '}
             <span
               className="bg-clip-text text-transparent"
               style={{ backgroundImage: 'linear-gradient(135deg, #8B5CF6 0%, #C4B5FD 40%, #F472B6 100%)' }}
             >
-              Donor Recognition
+              Displays to Life
             </span>
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-12" style={{ color: '#4C1D95' }}>
-            Join 100+ leading institutions using TouchDonor to recognize donors, tell impact stories, and inspire
-            continued philanthropy.
+            Join leading institutions using TouchDonor to transform static displays into interactive experiences that
+            captivate visitors and tell your story.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -1028,17 +1039,17 @@ function DRWConversionHub() {
 }
 
 /* ─── Page ──────────────────────────────────────────────────────────────── */
-export default function DonorRecognitionWallsPage() {
+export default function InteractiveDisplaysPage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: 'Digital Donor Recognition Walls',
-    description: 'Transform donor appreciation with TouchDonor\'s interactive donor wall software. Digital donor recognition that tells impact stories, updates in real time, and never runs out of space.',
+    name: 'Interactive Touchscreen Displays',
+    description: 'Transform visitor engagement with TouchDonor\'s interactive display software. Touchscreen kiosks, digital signage, and recognition displays for schools and nonprofits.',
     brand: {
       '@type': 'Brand',
       name: 'TouchDonor',
     },
-    category: 'Donor Recognition Software',
+    category: 'Interactive Display Software',
     offers: {
       '@type': 'Offer',
       priceCurrency: 'USD',
@@ -1049,30 +1060,31 @@ export default function DonorRecognitionWallsPage() {
       audienceType: 'Educational Institutions, Nonprofit Organizations',
     },
     featureList: [
-      'Unlimited Capacity',
-      'Real-Time Updates',
-      'Multimedia Storytelling',
+      'Touchscreen Interactivity',
+      'Rich Multimedia Content',
       'Search & Discovery',
-      'Campaign Progress Displays',
-      'Cloud-Based Management',
-      'Global Accessibility',
+      'Cloud-Based CMS',
+      'Unlimited Scalability',
+      'Mobile Accessibility',
+      'Analytics & Insights',
+      'ADA Compliant',
     ],
   }
 
   return (
     <main className="w-full bg-background">
       <Script
-        id="structured-data-donor-walls"
+        id="structured-data-interactive-displays"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Navigation />
-      <DRWHero />
+      <IDHero />
       <ProblemSection />
       <SolutionSection />
       <UseCasesSection />
-      <GettingStartedSection />
-      <DRWConversionHub />
+      <JourneySection />
+      <IDConversionHub />
       <Footer />
     </main>
   )
