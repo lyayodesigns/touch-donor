@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Menu, X } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const menuItems = [
   {
@@ -41,9 +42,16 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-            <span className="text-foreground font-bold text-sm">TD</span>
-          </div>
+          <span className="relative w-8 h-8 rounded-full overflow-hidden bg-white flex items-center justify-center shrink-0">
+            <Image
+              src="/apple-icon.png"
+              alt="TouchDonor logo"
+              width={134}
+              height={134}
+              className="max-w-none w-[420%] translate-y-[12%]"
+              priority
+            />
+          </span>
           <span className="font-bold text-xl text-foreground">TouchDonor</span>
         </Link>
 

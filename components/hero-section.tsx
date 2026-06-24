@@ -40,12 +40,12 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-4xl"
           >
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 backdrop-blur">
+            {/* <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 backdrop-blur">
               <div className="w-2 h-2 rounded-full bg-[#FDCB6E] animate-pulse" />
               <span className="text-sm font-medium" style={{ background: 'linear-gradient(135deg, #FDCB6E, #F39C12)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 Emmy‑Nominated Technology
               </span>
-            </div>
+            </div> */}
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground mb-6 leading-tight">
               Honor Your Legacy.{' '}

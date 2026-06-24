@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const footerLinks = {
   Solutions: [
@@ -29,12 +30,15 @@ export function Footer() {
           {/* Brand column */}
           <div className="col-span-1 md:col-span-2 flex flex-col gap-4">
             <div className="flex items-center gap-2.5">
-              <div
-                className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
-                style={{ background: 'linear-gradient(135deg, #8B5CF6 0%, #F472B6 100%)' }}
-              >
-                <span className="text-white font-bold text-sm leading-none">TD</span>
-              </div>
+              <span className="relative w-9 h-9 rounded-full overflow-hidden bg-white flex items-center justify-center shrink-0">
+                <Image
+                  src="/apple-icon.png"
+                  alt="TouchDonor logo"
+                  width={150}
+                  height={150}
+                  className="max-w-none w-[420%] translate-y-[12%]"
+                />
+              </span>
               <span
                 className="font-bold text-lg tracking-tight"
                 style={{ color: 'var(--footer-foreground)' }}

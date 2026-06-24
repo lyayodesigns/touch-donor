@@ -11,9 +11,11 @@ const geistMono = Geist_Mono({
 const spaceGrotesk = Space_Grotesk({ variable: '--font-space-grotesk', subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://touchdonor.com'),
   title: 'Digital Donor Recognition & Interactive Display Software | TouchDonor',
   description: 'Transform school legacy management with TouchDonor\'s interactive display software. Digital hall of fame, donor walls, alumni engagement & archival solutions. Emmy‑nominated technology for education.',
   generator: 'v0.app',
+  alternates: { canonical: '/' },
   icons: {
     icon: [
       {
@@ -21,6 +23,18 @@ export const metadata: Metadata = {
         type: 'image/svg+xml',
       },
     ],
+  },
+  openGraph: {
+    title: 'Digital Donor Recognition & Interactive Display Software | TouchDonor',
+    description: 'Digital hall of fame, donor walls, alumni engagement & archival solutions. Emmy‑nominated interactive display technology for education.',
+    url: '/',
+    siteName: 'TouchDonor',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Digital Donor Recognition & Interactive Display Software | TouchDonor',
+    description: 'Digital hall of fame, donor walls, alumni engagement & archival solutions. Emmy‑nominated interactive display technology for education.',
   },
 }
 

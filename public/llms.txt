@@ -1,0 +1,33 @@
+# TouchDonor
+
+> TouchDonor is a digital recognition platform providing interactive display software for donor recognition walls, hall of fame systems, alumni engagement, and school legacy preservation. Emmy-nominated technology built for K-12 schools, colleges, universities, athletic departments, and nonprofits.
+
+TouchDonor replaces static plaques and brass nameplates with dynamic, cloud-managed touchscreen experiences. Content updates in real time, scales without space limits, tells multimedia impact stories, and is accessible from any device with a shareable URL. The platform is WCAG 2.1 AA compliant.
+
+## Pages
+
+- [Home](https://touchdonor.com/): Overview of TouchDonor's digital donor recognition and interactive display software for education.
+- [Donor Recognition Walls](https://touchdonor.com/donor-recognition-walls/): Interactive digital donor walls with unlimited capacity, real-time updates, multimedia storytelling, search, and campaign progress displays.
+- [Alumni Engagement](https://touchdonor.com/alumni-engagement/): Digital alumni engagement platform with halls of fame, searchable directories, success-story showcases, and interactive recognition displays.
+- [Interactive Displays](https://touchdonor.com/interactive-displays/): Touchscreen kiosks, digital signage, and recognition displays that transform visitor engagement for schools and nonprofits.
+- [FAQ](https://touchdonor.com/faq/): Common questions about compatibility, content management, and accessibility.
+- [Contact](https://touchdonor.com/contact/): Request a personalized demo or reach out to the TouchDonor team.
+
+## Solutions
+
+- Digital Donor Recognition Walls: Unlimited capacity, instant updates, multimedia profiles, search and discovery, campaign progress displays, cloud-based management, and global accessibility.
+- Alumni Engagement Platform: Digital alumni hall of fame, searchable directory, success-story showcase, interactive recognition displays, and permanent digital archives.
+- Interactive Touchscreen Displays: Touchscreen kiosks and digital signage for lobbies, libraries, and athletic facilities.
+
+## Audiences
+
+- K-12 schools
+- Colleges and universities
+- Athletic departments
+- Alumni associations
+- Nonprofit organizations
+
+## Contact
+
+- Email: hello@touchdonor.com
+- Demo requests: https://touchdonor.com/contact/#request-demo
