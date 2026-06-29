@@ -19,10 +19,27 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/favicon-16x16.png',
+        type: 'image/png',
+        sizes: '16x16',
+      },
+      {
+        url: '/favicon-32x32.png',
+        type: 'image/png',
+        sizes: '32x32',
+      },
+      {
+        url: '/favicon.png',
+        type: 'image/png',
+        sizes: '48x48',
+      },
+      {
+        url: '/icon-192x192.png',
+        type: 'image/png',
+        sizes: '192x192',
       },
     ],
+    apple: '/apple-icon.png',
   },
   openGraph: {
     title: 'Digital Donor Recognition & Interactive Display Software | TouchDonor',

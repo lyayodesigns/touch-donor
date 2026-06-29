@@ -10,7 +10,7 @@ const footerLinks = {
     { label: 'Interactive Displays', href: '/interactive-displays/' },
   ],
   Resources: [
-    { label: 'Blog', href: '#resources' },
+    { label: 'Blog', href: '/blog/' },
     { label: 'FAQ', href: '/faq/' },
   ],
 }
